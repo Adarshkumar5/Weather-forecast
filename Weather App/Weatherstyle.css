@@ -1,0 +1,158 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+.card{
+	width: 90%;
+	max-width: 470px;
+	background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(4,113,189,1) 70%, rgba(0,212,255,1) 100%);
+	color: #fff;
+	margin: 100px auto 0;
+	border-radius: 20px;
+	padding: 40px 35px;
+	text-align: center;
+}
+
+.bgvideo{
+	background-attachment: fixed;
+}
+
+.back-video{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+	.back-video{
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media (max-aspect-ratio: 16/9){
+	.back-video{
+		width: auto;
+		height: 100%;
+	}
+}
+
+.search{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.search input{
+	border: 0;
+	outline: 0;
+	background: #ebfffc;
+	color: #555;
+	padding: 10px 25px;
+	height: 60px;
+	border-radius: 30px;
+	flex: 1;
+	margin-right: 16px;
+	font-size:18px;
+}
+
+.search button{
+	border: 0;
+	outline: 0;
+	background: #ebfffc;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+}
+
+.search button img{
+	width: 16px;
+}
+
+.weather-icon{
+	width: 120px;
+	margin-top: 30px;
+	
+}
+
+.weather h1{
+	font-size: 40px;
+	font-weight: 300;
+}
+
+.weather h2{
+	display: inline;
+	font-size: 25px;
+	font-weight: 300;
+	margin-top: 10px;
+}
+
+.details{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+	margin-top: 50px;	
+}
+
+.col{
+	display: flex;
+	align-items: center;
+	text-align: left;
+}
+
+.col img{
+	width: 50px;
+	margin-right: 10px;
+}
+
+.humidity, .wind{
+	font-size: 20px;
+	margin-top: -6px;
+}
+
+.info{
+	font-size: 25px;
+	margin-top: 15px;
+	font-weight: 250;
+	color: #222;
+}
+
+.display-time{
+	margin-top: 6px;
+	font-size: 20px;
+	font-weight: 150;
+	color: #020024;
+}
+
+.chart{
+	width: 90%;
+	max-width: 1000px;
+	max-height: 700px;
+	background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(4,113,189,1) 100%, rgba(0,212,255,1) 100%);
+	color: #fff;
+	border: 2px solid black;
+	margin: 100px auto 0;
+	border-radius: 20px;
+	padding: 40px 35px;
+	text-align: center;
+}
+
+.footer{
+	top: 15px;
+	background: #ffffff;
+	color: black;
+	text-align: center;
+	padding: 1em;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
